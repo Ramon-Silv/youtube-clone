@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.youtube.com/s/desktop/00d32223/img/favicon_32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="youtube.css">
+    <title>Clone do Youtube</title>
+</head>
+
+<body>
+        <header>
+            <div class="header_esquerda">
+                <i class="material-icons" id="material-icons-menu" onclick="some_sidebar()">menu</i>
+                <a href="https://www.youtube.com/" style="text-decoration: none;"><img src="imagens/logo_youtube.png" alt="Youtube logo"><sup>BR</sup></a>
+            </div>
+
+            <div class="header_centro">
+                <input type="text" name="pesquisar" id="pesquisar" placeholder="Pesquisar">
+                <button><i class="material-icons">search</i></button>
+                <i class="material-icons">mic</i>
+            </div>
+
+            <div class="header_direita">
+                <i class="material-icons">video_call</i>
+                <i class="material-icons">notifications</i>
+                <i class="material-icons">account_circle</i>
+            </div>
+        </header>
+
+        <section id="sidebar">
+            <nav>
+                <ul>
+                    <li>
+                        <i class="material-icons">home</i>
+                        <span>Início</span>
+                    </li>
+                    <li>
+                        <img src="imagens/youtube-shorts-logo-fill.png" alt="Youtube shorts">
+                        <span>Shorts</span>
+                    </li>
+                    <li>
+                        <i class="material-icons">subscriptions</i>
+                        <span>Inscrições</span>
+                    </li>
+
+                    <hr>
+
+                    <li>
+                        <i class="material-icons">video_library</i>
+                        <span>Biblioteca</span>
+                    </li>
+                    <li>
+                        <i class="material-icons">history</i>
+                        <span>Histórico</span>
+                    </li>
+                    <li>
+                        <i class="material-icons">watch_later</i>
+                        <span>Assistir mais tarde</span>
+                    </li>
+                    <li>
+                        <i class="material-icons">thumb_up</i>
+                        <span>Vídeos marcados com gostei</span>
+                    </li>
+
+                    <hr>
+
+                    <span>Inscrições</span>
+                        <li>
+                            <img src="imagens/youtube-musica.jpg" alt="Música">
+                            <span>Música</span> 
+                        </li>
+                        <li>
+                            <img src="imagens/youtube-esportes.jpg" alt="Youtube Premium">
+                            <span>Esportes</span>
+                        </li>
+                        <li>
+                            <img src="imagens/youtube-jogos.jpg" alt="Youtube Premium">
+                            <span>Jogos</span> 
+                        </li>
+                        <li>
+                            <img src="imagens/youtube-filmes.jpg" alt="Youtube Premium">
+                            <span>Filmes</span>
+                        </li>
+
+                    <hr>
+
+                    <span>Explorar</span>
+                        <li>
+                            <i class="material-icons">local_fire_department</i>
+                            <span>Em alta</span>
+                        </li>
+                        <li>
+                            <i class="material-icons">local_mall</i>
+                            <span>Shopping</span>
+                        </li>
+                        <li>
+                            <i class="material-icons">music_note</i>
+                            <span>Música</span>
+                        </li>
+                        <li>
+                            <i class="material-icons">movie</i>
+                            <span>Filmes</span>
+                        </li>
+                        <li>
+                            <i class="material-icons">stream</i>
+                            <span>Ao vivo</span>
+                        </li>
+                        <li>
+                            <i class="material-icons">sports_esports</i>
+                            <span>Jogos</span>
+                        </li>
+                        <li>
+                            <i class="material-icons">newspaper</i>
+                            <span>Notícias</span>
+                        </li>
+                        <li>
+                            <i class="material-icons">emoji_events</i>
+                            <span>Esportes</span>
+                        </li>
+                        <li>
+                            <i class="material-icons">lightbulb</i>
+                            <span>Aprender</span>
+                        </li>
+
+                    <hr>
+
+                    <span>Mais do Youtube</span>
+                        <li>
+                            <img src="imagens/youtube.png" alt="Youtube Premium">
+                            <span>Youtube Premium</span>
+                        </li>
+                        <li>
+                            <img src="imagens/youtube_music.png" alt="Youtube Music">
+                            <span>Youtube Music</span>
+                        </li>
+                        <li>
+                            <img src="imagens/youtube_kids.png" alt="Youtube Kids">
+                            <span>Youtube Kids</span>
+                        </li>
+
+                    <hr>
+                    
+                    <li>
+                        <i class="material-icons">settings</i>
+                        <span>Configurações</span>
+                    </li>
+                    <li>
+                        <i class="material-icons">flag</i>
+                        <span>Histórico de denúncias</span>
+                    </li>
+                    <li>
+                        <i class="material-icons">help_outline</i>
+                        <span>Ajuda</span>
+                    </li>
+                    <li>
+                        <i class="material-icons">feedback</i>
+                        <span>Enviar feedback</span>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <nav id="nav_main">
+            <ul id="nav_main_ul">
+                <i class="material-icons" id="material-icons-setas">
+                    navigate_before
+                </i>
+                <a href="#"><li class="tudo">Tudo</li></a>
+                <a href="#"><li>Música</li></a>
+                <a href="#"><li>Mixes</li></a>
+                <a href="#"><li>Dublagens</li></a>
+                <a href="#"><li>Jogos</li></a>
+                <a href="#"><li>Ao vivo</li></a>
+                <a href="#"><li>Comédia</li></a>
+                <a href="#"><li>Notícias</li></a>
+                <a href="#"><li>Lista de reprodução</li></a>
+                <a href="#"><li>Assistidos</li></a>
+                <i class="material-icons" id="material-icons-setas">
+                    navigate_next
+                </i>
+            </ul>
+        </nav>
+
+        <main id="main">
+            <section>
+                <aside>
+                    <img src="imagens/youtube-music-logo.png" alt="">
+                    <p>Assine o plano família. YT Music sem anúncios e em segundo plano para até seis pessoas.</p>
+                    <button>Baixe agora</button>
+                </aside>
+
+                <div id="video_container">
+                    <div>
+                        <a href="https://youtu.be/c8ijHgTvv9I" target="_blank">
+                        <figure>
+                            <img src="imagens/img-div1.jpg" alt="">
+                            
+                            <figcaption>
+                                <i class="material-icons">account_circle</i>
+                                <p>[Playlist] Top songs 2023 para você curtir</p>
+                                <span>Miracle Music</span> <br>
+                                <span>574mil de views • há 2 meses</span>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://youtu.be/1H-vSHVOxoU" target="_blank">
+                        <figure>
+                            <img src="imagens/img-div2.jpg" alt="">
+                            
+                            <figcaption>
+                                <i class="material-icons">account_circle</i>
+                                <p>Animated Login Form Using HTML & CSS</p>
+                                <span>Hash Techie</span> <br>
+                                <span>17mil de views • há 7 meses</span>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://youtu.be/hKXvCfXQQZg" target="_blank">
+                        <figure>
+                            <img src="imagens/img-div3.jpg" alt="">
+                            
+                            <figcaption>
+                                <i class="material-icons">account_circle</i>
+                                <p>Músicas para esquecer dos problemas</p>
+                                <span>Acoustic Playlist</span> <br>
+                                <span>1mi de views • há 9 meses</span>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://youtu.be/HjBo--1n8lI" target="_blank">
+                        <figure>
+                            <img src="imagens/img-div4.jpg" alt="">
+                            
+                            <figcaption>
+                                <i class="material-icons">account_circle</i>
+                                <p>Rihanna’s FULL Apple Music Super Bowl LVII Halftime Show</p>
+                                <span>NFL</span> <br>
+                                <span>106mi de views • há 3 semanas</span>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://youtu.be/6E1heaktx0A" target="_blank">
+                        <figure>
+                            <img src="imagens/img-div5.jpg" alt="">
+                            
+                            <figcaption>
+                                <i class="material-icons">account_circle</i>
+                                <p>Fiz ponte invisível no minecraft</p>
+                                <span>Tonigon</span> <br>
+                                <span>394mil de views • há 7 dias</span>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://youtu.be/2EINsmLR-4k" target="_blank">
+                        <figure>
+                            <img src="imagens/img-div6.jpg" alt="">
+                            
+                            <figcaption>
+                                <i class="material-icons">account_circle</i>
+                                <p>25 Days Building The Most Amazing Underground Temple House</p>
+                                <span>Primitive Tool</span> <br>
+                                <span>43mi de views • há 9 meses</span>
+                            </figcaption>
+                        </figure>
+                        </a>    
+                    </div>
+                    <div>
+                        <a href="https://youtu.be/iUyBzYK7GUw" target="_blank">
+                        <figure>
+                            <img src="imagens/img-div7.jpg" alt="">
+                            
+                            <figcaption>
+                                <i class="material-icons">account_circle</i>
+                                <p>[Playlist] Coldplay Albums</p>
+                                <span>Pop Playlist</span> <br>
+                                <span>574mil de views • há 2 meses</span>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://youtu.be/JyugpcKxDO0" target="_blank">
+                        <figure>
+                            <img src="imagens/img-div8.jpg" alt="">
+                            
+                            <figcaption>
+                                <i class="material-icons">account_circle</i>
+                                <p>Veja como terminou Super Shock</p>
+                                <span>Ei Nerd</span> <br>
+                                <span>748mil de views • há 13 dias</span>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://youtu.be/YOHpmBsDceU" target="_blank">
+                        <figure>
+                            <img src="imagens/img-div9.jpg" alt="">
+                            
+                            <figcaption>
+                                <i class="material-icons">account_circle</i>
+                                <p>Shakira: Bzrp Music Sessions | The Tonight Show Starring Jimmy Fallon</p>
+                                <span>The Tonight Show Starring Jimmy Fallon</span> <br>
+                                <span>6,1mi de views • há 2 semanas</span>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://youtu.be/ME1sG6UK8Uw" target="_blank">
+                        <figure>
+                            <img src="imagens/img-div10.jpg" alt="">
+                            
+                            <figcaption>
+                                <i class="material-icons">account_circle</i>
+                                <p>Trailer | Velozes e Furiosos 10</p>
+                                <span>Melhores Trailers Online</span> <br>
+                                <span>1,6mi de views • há 1 mês</span>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://youtu.be/0whN07AE7nQ" target="_blank">
+                        <figure>
+                            <img src="imagens/img-div11.jpg" alt="">
+                            
+                            <figcaption>
+                                <i class="material-icons">account_circle</i>
+                                <p>GarticPhone #5</p>
+                                <span>Alanzoka</span> <br>
+                                <span>408mil de views • há 1 mês</span>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://youtu.be/WucoIk7CkjA" target="_blank">
+                        <figure>
+                            <img src="imagens/img-div12.jpg" alt="">
+                            
+                            <figcaption>
+                                <i class="material-icons">account_circle</i>
+                                <p>Conheça a Suiça</p>
+                                <span>As viagens de Antônio</span> <br>
+                                <span>2,3mi de views • há 4 meses</span>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://youtu.be/Zgq5cc9FrKU" target="_blank">
+                        <figure>
+                            <img src="imagens/img-div13.jpg" alt="">
+                            
+                            <figcaption>
+                                <i class="material-icons">account_circle</i>
+                                <p>Teste de Raciocínio Lógico</p>
+                                <span>MARCEMÁTICA</span> <br>
+                                <span>98mil de views • há 2 meses</span>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://youtu.be/JmSzHN1zRow" target="_blank">
+                        <figure>
+                            <img src="imagens/img-div14.jpg" alt="">
+                            
+                            <figcaption>
+                                <i class="material-icons">account_circle</i>
+                                <p>One Punch Man | Tatsumaki mostra seu potencial</p>
+                                <span>Ei Nerd</span> <br>
+                                <span>101mil de views • há 3 meses</span>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://youtu.be/b2K7eo5Jdj8" target="_blank">
+                        <figure>
+                            <img src="imagens/img-div15.jpg" alt="">
+                            
+                            <figcaption>
+                                <i class="material-icons">account_circle</i>
+                                <p>Exercícios JavaScript (Parte 1) - Curso JavaScript</p>
+                                <span>Curso em Vídeo</span> <br>
+                                <span>302mil de views • há 3 anos</span>
+                            </figcaption>
+                        </figure>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+</body>
+    <script>
+        const iconsmenu= document.getElementById("#material-icons-menu").addEventListener("click", some_sidebar);
+
+        function some_sidebar() {
+            document.getElementById("sidebar").style.display= "none";
+            document.getElementById("nav_main").style.width= "100%";
+            document.getElementById("nav_main").style.left= "0%";
+            document.getElementById("nav_main_ul").style.justifyContent= "space-around";
+            document.getElementById("main").style.width= "100%";
+            document.getElementById("main").style.left= "0%";
+            document.getElementById("video_container").style.gridTemplateColumns= "25% 25% 25%";
+            document.getElementById("video_container").style.justifyContent= "space-around";
+        }
+    </script>
+</html>
